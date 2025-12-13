@@ -1,24 +1,49 @@
-# README
+# Sweet Shop API 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple REST API Developed with Ruby on Rails (API mode). Manages a sweet shop.
+This project is centered on handling user authentication, sweet handling, etc.
+---
+#  Features
+- User Registration & Login
+- Handling Passwords with BCrypt
+- Show available sweets
+- Include New Sweets
+- Simple role-based structure (user/admin ready)
+---
+##  Tech Stack
+- Ruby 3.x
+- Ruby on Rails 8 (API mode)
+- SQLite Database
+- BCrypt for password encryption
+---
 
-Things you may want to cover:
+##  API Endpoints
 
-* Ruby version
+###  Authentication
 
-* System dependencies
+**Register User**  
+`POST /api/auth/register`
 
-* Configuration
+**Login User**  
+`POST /api/auth/login`
 
-* Database creation
+---
 
-* Database initialization
+### 🍭 Sweets
 
-* How to run the test suite
+**Get all sweets**  
+`GET /api/sweets`
 
-* Services (job queues, cache servers, search engines, etc.)
+**Create a new sweet**  
+`POST /api/sweets`
 
-* Deployment instructions
+---
+##  How to Run Locally
 
-* ...
+```bash
+bundle install
+rails db:migrate
+rails s
+
+Server will start at:
+ http://localhost:3000
