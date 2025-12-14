@@ -40,10 +40,32 @@ This project is centered on handling user authentication, sweet handling, etc.
 ---
 ##  How to Run Locally
 
-```bash
+
 bundle install
 rails db:migrate
 rails s
 
 Server will start at:
  http://localhost:3000
+---
+## My AI Usage
+
+I actively used AI tools as part of my development workflow, following the project’s AI usage policy and maintaining full ownership of the final implementation.
+
+AI Tools Used
+
+ChatGPT – for architectural guidance, debugging support, and code explanations.
+
+(Optional: add if used) GitHub Copilot – for boilerplate suggestions and faster coding.
+
+How I Used AI
+
+I used ChatGPT to understand the project requirements and break them down into backend and frontend milestones.
+
+I took guidance on designing RESTful APIs for the Sweet Shop Management System.
+
+AI helped me debug frontend–backend interaction issues, especially around API routing, ports, and data persistence.
+
+I used AI assistance to identify problems in state management and API integration in React and to fix incorrect assumptions about static UI vs dynamic data.
+
+AI was also used to review and improve code quality, error handling, and overall structure.
