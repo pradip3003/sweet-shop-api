@@ -1,71 +1,127 @@
-# Sweet Shop API 
+Sweet Shop Management System
+============================
 
-Simple REST API Developed with Ruby on Rails (API mode). Manages a sweet shop.
-This project is centered on handling user authentication, sweet handling, etc.
----
-#  Features
-- User Registration & Login
-- Handling Passwords with BCrypt
-- Show available sweets
-- Include New Sweets
-- Simple role-based structure (user/admin ready)
----
-##  Tech Stack
+This is a simple full-stack project developed using Ruby on Rails (API mode) as the backend technology and React.js as the frontend technology.
+
+The project is used for authentication in a sweet shop, managing a list of sweets, and providing a basic dashboard interface.
+
+------------------------------------------------------------------
+
+FEATURES
+
+- User registration and login
+- Handling passwords using BCrypt
+- View available sweets
+- Add new sweets
+- Simple role-based setup (user/admin ready)
+- Frontend dashboard developed using React.js
+
+------------------------------------------------------------------
+
+TECH STACK
+
+Backend:
 - Ruby 3.x
 - Ruby on Rails 8 (API mode)
-- SQLite Database
+- SQLite database
 - BCrypt for password encryption
----
 
-##  API Endpoints
+Frontend:
+- React.js
+- Component-based user interface
+- Basic dashboard structure
 
-###  Authentication
+------------------------------------------------------------------
 
-**Register User**  
-`POST /api/auth/register`
+PROJECT STRUCTURE
 
-**Login User**  
-`POST /api/auth/login`
+sweet-shop-api
+- app/            (Ruby on Rails backend)
+- config/
+- db/
+- frontend/       (React frontend)
+  - src/
+  - public/
+  - package.json
+- screenshots/
+- README.md
 
----
+------------------------------------------------------------------
 
-### 🍭 Sweets
+API ENDPOINTS
 
-**Get all sweets**  
-`GET /api/sweets`
+Authentication:
+- Register user
+  POST /api/auth/register
 
-**Create a new sweet**  
-`POST /api/sweets`
+- Login user
+  POST /api/auth/login
 
----
-##  How to Run Locally
+Sweets:
+- Get all sweets
+  GET /api/sweets
 
+- Create a new sweet
+  POST /api/sweets
 
+------------------------------------------------------------------
+
+HOW TO RUN LOCALLY
+
+Backend:
 bundle install
 rails db:migrate
 rails s
 
-Server will start at:
- http://localhost:3000
----
-## My AI Usage
+Backend runs on:
+http://localhost:3001
 
-I actively used AI tools as part of my development workflow, following the project’s AI usage policy and maintaining full ownership of the final implementation.
+Frontend:
+cd frontend
+npm install
+npm run dev
 
-AI Tools Used
+Frontend runs on:
+http://localhost:3000
 
-ChatGPT – for architectural guidance, debugging support, and code explanations.
+------------------------------------------------------------------
 
-(Optional: add if used) GitHub Copilot – for boilerplate suggestions and faster coding.
+FRONTEND STATUS
 
-How I Used AI
+The frontend user interface is built using React.js.
+Currently, hardcoded data is used for UI demonstration purposes.
+The API integration structure is present but could not be finalized due to time constraints.
 
-I used ChatGPT to understand the project requirements and break them down into backend and frontend milestones.
+------------------------------------------------------------------
 
-I took guidance on designing RESTful APIs for the Sweet Shop Management System.
+SCREENSHOTS
 
-AI helped me debug frontend–backend interaction issues, especially around API routing, ports, and data persistence.
+Screenshots related to backend execution, API responses, and frontend user interface
+are available inside the screenshots folder.
 
-I used AI assistance to identify problems in state management and API integration in React and to fix incorrect assumptions about static UI vs dynamic data.
+------------------------------------------------------------------
 
-AI was also used to review and improve code quality, error handling, and overall structure.
+AI USAGE
+
+AI tools were used during the development process while maintaining full ownership of the final implementation.
+
+AI Tools Used:
+- ChatGPT for architectural guidance, debugging support, and code explanations
+- GitHub Copilot (optional) for boilerplate code suggestions
+
+How AI Was Used:
+- Understanding project requirements
+- Designing REST APIs
+- Fixing frontend and backend issues
+- Code restructuring and error handling
+- Reviewing overall project quality
+
+------------------------------------------------------------------
+
+NOTES
+
+Due to limited time constraints, complete frontend and backend integration could not be achieved.
+However, both backend and frontend are independently functional and demonstrate full-stack development understanding.
+
+
+
